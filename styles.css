@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "Cormorant Garamong";
+    src: url("/assets/fonts/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+:root {
+    --bg: #f6f3f8;
+    --surface: #ffffff;
+    --text: #1d1b20;
+    --muted: #706b75;
+
+    --accent: #7b4bb3;
+    --accent-dark: #542b82;
+
+    --display-font: "Cormorant Garamond", serif;
+    --default-font: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--body);
+}
+
+header {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 8vw;
+}
+
+header h1 {
+    margin: 0;
+    font-family: var(--display-font);
+    font-size: clamp(5rem, 13vw, 11rem);
+    font-weight: 300;
+    color: var(--accent-dark);
+    line-height: 0.8;
+    letter-spacing: -0.04em;
+}
+
+header p {
+    margin: 2rem 0 0;
+    color: var(--muted);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem 8vw;
+    color: var(--accent)
+}
+
+main {
+    padding: 0 8vw;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    text-align: center;
+    font-family: var(--display-font);
+    font-size: clamp(2rem, 4vw, 4rem);
+    color: var(--accent-dark);
+    font-weight: 300;
+    line-height: 0.9;
+    margin: 0 0 1rem;
+}
+
+section>p {
+    color: var(--muted);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.card {
+    background: var(--surface);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(40, 20, 50, 0.08);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px) rotate(-0.5deg);
+    box-shadow: 0 16px 40px rgba(40, 20, 50, 0.14);
+}
+
+.card-image {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: #faf9fb;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-info {
+    padding: 1.5rem;
+}
+
+.card-id {
+    display: block;
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    margin: 0;
+    font-family: var(--display-font);
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.card-place {
+    margin: 0.4rem 0 1rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.card-description {
+    margin: 0;
+    color: var(--text);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.filters {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem 1.25rem;
+
+    border: 1px solid #d8d2dc;
+    border-radius: 999px;
+
+    background: var(--surface);
+    color: var(--text);
+
+    font: inherit;
+    font-size: 1rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.search-input::placeholder {
+    color: var(--muted);
+}
+
+.search-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(123, 75, 179, 0.12);
+}
+
+.filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 1.25rem;
+}
+
+.filter-chip {
+    padding: 0.55rem 1rem;
+
+    border: 1px solid #d8d2dc;
+    border-radius: 999px;
+
+    background: transparent;
+    color: var(--text);
+
+    font: inherit;
+    font-size: 0.85rem;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.filter-chip:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.filter-chip.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+.filter-chip:active {
+    transform: scale(0.96);
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 4rem auto 0;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-field label {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.form-field label span {
+    color: var(--muted);
+    font-weight: 400;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 1rem 1.1rem;
+
+    border: 1px solid #d8d2dc;
+    border-radius: 6px;
+
+    background: var(--surface);
+    color: var(--text);
+
+    font: inherit;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-field textarea {
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(123, 75, 179, 0.12);
+}
+
+.contact-form button {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.9rem 1.5rem;
+
+    border: none;
+    border-radius: 999px;
+
+    background: var(--accent);
+    color: white;
+
+    font: inherit;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="script.js" defer></script>
+    <title>Mis tapitas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Junto tapitas</h1>
+      <p>y te las muestro.</p>
+    </header>
+
+    <main>
+      <section id="tapitas">
+        <section id="mis-tapitas" class="collection">
+          <div class="filters">
+            <input
+              type="search"
+              class="search-input"
+              placeholder="Buscar en la colección..."
+            />
+
+            <div class="filter-chips">
+              <button class="filter-chip active" data-place="">Todas</button>
+
+              <button class="filter-chip" data-place="Argentina">
+                Argentina
+              </button>
+
+              <button class="filter-chip" data-place="Uruguay">Uruguay</button>
+            </div>
+          </div>
+
+          <div class="grid">
+            <article class="card" data-brand="Andes" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0041.png" alt="Tapita Andes" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0041</span>
+
+                <h3>Andes</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Tiene una montaña geométrica como los Andes tienen montañas de
+                  verdad. Además es una A, como en Andes. 10/10 diseño, hicieron
+                  los deberes.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Antares" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0023.png" alt="Tapita Antares" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0023</span>
+
+                <h3>Antares</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Antares es una supergigante roja. No me acuerdo si esta
+                  cerveza era roja. O supergigante…
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Blue Moon" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0029.png" alt="Tapita Blue Moon" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0029</span>
+
+                <h3>Blue Moon</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Para beber &#x27;once in a blue moon&#x27;. No se tenían mucha
+                  fe.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Brahma" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0024.png" alt="Tapita Brahma" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0024</span>
+
+                <h3>Brahma</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Hay que respetar ese comprimiso con la funcionalidad sobre la
+                  estética.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="card"
+              data-brand="Cabesas Bier"
+              data-place="Argentina"
+            >
+              <div class="card-image">
+                <img src="assets/tapitas/0030.png" alt="Tapita Cabesas Bier" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0030</span>
+
+                <h3>Cabesas Bier</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Se te sube a la cabesa en lugar de la cabeza.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="card"
+              data-brand="CCU Argentina"
+              data-place="Argentina"
+            >
+              <div class="card-image">
+                <img src="assets/tapitas/0002.png" alt="Tapita CCU Argentina" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0002</span>
+
+                <h3>CCU Argentina</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">Donación</p>
+              </div>
+            </article>
+
+            <article
+              class="card"
+              data-brand="Clausthaler"
+              data-place="Argentina"
+            >
+              <div class="card-image">
+                <img src="assets/tapitas/0022.png" alt="Tapita Clausthaler" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0022</span>
+
+                <h3>Clausthaler</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Cerveza sin alcohol. Técnicamente vino a participar.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Corona" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0026.png" alt="Tapita Corona" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0026</span>
+
+                <h3>Corona</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">Virus?</p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Desconocida" data-place="">
+              <div class="card-image">
+                <img src="assets/tapitas/0036.png" alt="Tapita Desconocida" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0036</span>
+
+                <h3>Desconocida</h3>
+
+                <p class="card-description">Corona sobre fondo dorado</p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Desconocida" data-place="">
+              <div class="card-image">
+                <img src="assets/tapitas/0037.png" alt="Tapita Desconocida" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0037</span>
+
+                <h3>Desconocida</h3>
+
+                <p class="card-product">Cerveza Especial</p>
+
+                <p class="card-description">Corona sobre fondo dorado</p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Desconocida" data-place="">
+              <div class="card-image">
+                <img src="assets/tapitas/0038.png" alt="Tapita Desconocida" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0038</span>
+
+                <h3>Desconocida</h3>
+
+                <p class="card-description">Un oso!</p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Desconocida" data-place="">
+              <div class="card-image">
+                <img src="assets/tapitas/0039.png" alt="Tapita Desconocida" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0039</span>
+
+                <h3>Desconocida</h3>
+
+                <p class="card-description">Árbol naranja sobre fondo azul</p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Desconocida" data-place="">
+              <div class="card-image">
+                <img src="assets/tapitas/0040.png" alt="Tapita Desconocida" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0040</span>
+
+                <h3>Desconocida</h3>
+
+                <p class="card-description">
+                  Corona abstracta sobre fondo rojo????
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="card"
+              data-brand="Erdinger Weissbrau"
+              data-place="Uruguay"
+            >
+              <div class="card-image">
+                <img
+                  src="assets/tapitas/0019.png"
+                  alt="Tapita Erdinger Weissbrau"
+                />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0019</span>
+
+                <h3>Erdinger Weissbrau</h3>
+
+                <p class="card-product">Alkohol-Frei</p>
+                <p class="card-place">Uruguay</p>
+                <p class="card-description">
+                  Fui en auto, era la única opción.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Goopers" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0025.png" alt="Tapita Goopers" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0025</span>
+
+                <h3>Goopers</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Definitivamente una de las tapitas de todos los tiempos.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="card"
+              data-brand="Goose Island"
+              data-place="Argentina"
+            >
+              <div class="card-image">
+                <img src="assets/tapitas/0011.png" alt="Tapita Goose Island" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0011</span>
+
+                <h3>Goose Island</h3>
+
+                <p class="card-product">312 Urban Wheat Ale</p>
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Les tomó 312 intentos llegar a esta fórmula.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="card"
+              data-brand="Goose Island"
+              data-place="Argentina"
+            >
+              <div class="card-image">
+                <img src="assets/tapitas/0033.png" alt="Tapita Goose Island" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0033</span>
+
+                <h3>Goose Island</h3>
+
+                <p class="card-product">Goose IPA</p>
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Esta la compré porque tenía un ganso. No me gusta la IPA.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Grolsch" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0035.png" alt="Tapita Grolsch" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0035</span>
+
+                <h3>Grolsch</h3>
+
+                <p class="card-product">Premium lager</p>
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Dice premium, así que debe ser premium.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Heineken" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0004.png" alt="Tapita Heineken" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0004</span>
+
+                <h3>Heineken</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Probablemente reconocible incluso sin esta descripción.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Heineken" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0012.png" alt="Tapita Heineken" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0012</span>
+
+                <h3>Heineken</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">Definitivamente Heineken.</p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Heineken" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0032.png" alt="Tapita Heineken" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0032</span>
+
+                <h3>Heineken</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Por fuera: Heineken. Por dentro: VERDE.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="card"
+              data-brand="Estrella de Galicia"
+              data-place="Uruguay"
+            >
+              <div class="card-image">
+                <img
+                  src="assets/tapitas/0028.png"
+                  alt="Tapita Estrella de Galicia"
+                />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0028</span>
+
+                <h3>Estrella de Galicia</h3>
+
+                <p class="card-product">1906</p>
+                <p class="card-place">Uruguay</p>
+                <p class="card-description">
+                  En 1906, en algún lugar de Galicia, había una estrella.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Iguana" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0009.png" alt="Tapita Iguana" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0009</span>
+
+                <h3>Iguana</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Iguana. Supuestamente. Parece más un gecko del patio.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Isenbeck" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0027.png" alt="Tapita Isenbeck" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0027</span>
+
+                <h3>Isenbeck</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  100% malta, 100% cerveza, 100% caballo.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="card"
+              data-brand="La Serrana"
+              data-place="Argentina"
+            >
+              <div class="card-image">
+                <img src="assets/tapitas/0005.png" alt="Tapita La Serrana" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0005</span>
+
+                <h3>La Serrana</h3>
+
+                <p class="card-product">Cerveza Artesanal</p>
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Sabemos que es una cerveza artesanal porque dice que es
+                  artesanal.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Miller" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0016.png" alt="Tapita Miller" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0016</span>
+
+                <h3>Miller</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  El auténtico boceto del molinero (?)
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Patagonia" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0003.png" alt="Tapita Patagonia" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0003</span>
+
+                <h3>Patagonia</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  En la Patagonia tomé cosas mejores, ups.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Patagonia" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0014.png" alt="Tapita Patagonia" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0014</span>
+
+                <h3>Patagonia</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  No incluye un viaje gratis a la Patagonia.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Patricia" data-place="Uruguay">
+              <div class="card-image">
+                <img src="assets/tapitas/0017.png" alt="Tapita Patricia" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0017</span>
+
+                <h3>Patricia</h3>
+
+                <p class="card-place">Uruguay</p>
+                <p class="card-description">
+                  Un tributo a una profesora que tuve (?)
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Pilsen" data-place="Uruguay">
+              <div class="card-image">
+                <img src="assets/tapitas/0020.png" alt="Tapita Pilsen" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0020</span>
+
+                <h3>Pilsen</h3>
+
+                <p class="card-product">Malta</p>
+                <p class="card-place">Uruguay</p>
+                <p class="card-description">Ey esto no es cerveza!</p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Pilsen" data-place="Uruguay">
+              <div class="card-image">
+                <img src="assets/tapitas/0021.png" alt="Tapita Pilsen" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0021</span>
+
+                <h3>Pilsen</h3>
+
+                <p class="card-place">Uruguay</p>
+                <p class="card-description">Un verdadero clásico.</p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Quilmes" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0008.png" alt="Tapita Quilmes" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0008</span>
+
+                <h3>Quilmes</h3>
+
+                <p class="card-product">Bajo cero</p>
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Hace frio y estoy lejos de caaaasa…
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Quilmes" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0010.png" alt="Tapita Quilmes" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0010</span>
+
+                <h3>Quilmes</h3>
+
+                <p class="card-product">1890</p>
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  1890. La cerveza que ya estaba acá antes que vos.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Quilmes" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0015.png" alt="Tapita Quilmes" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0015</span>
+
+                <h3>Quilmes</h3>
+
+                <p class="card-product">Stout</p>
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Nos dio tremendo sueño a mi padre y a mí. La siesta fue
+                  inevitable.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Quilmes" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0018.png" alt="Tapita Quilmes" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0018</span>
+
+                <h3>Quilmes</h3>
+
+                <p class="card-product">Bock</p>
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Esta me gusta. La cerveza también
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Quilmes" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0031.png" alt="Tapita Quilmes" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0031</span>
+
+                <h3>Quilmes</h3>
+
+                <p class="card-product">Cristal</p>
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Un verdadero clásico pero cruzando el charco.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Schneider" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0001.png" alt="Tapita Schneider" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0001</span>
+
+                <h3>Schneider</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">
+                  Cumple satisfactoriamente con los requisitos de ser la tapita
+                  de una Schneider.
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-brand="Sol" data-place="Argentina">
+              <div class="card-image">
+                <img src="assets/tapitas/0034.png" alt="Tapita Sol" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0034</span>
+
+                <h3>Sol</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">Mejor consumida bajo el sol.</p>
+              </div>
+            </article>
+
+            <article
+              class="card"
+              data-brand="Stella Artois"
+              data-place="Argentina"
+            >
+              <div class="card-image">
+                <img src="assets/tapitas/0006.png" alt="Tapita Stella Artois" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0006</span>
+
+                <h3>Stella Artois</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">Esta es roja</p>
+              </div>
+            </article>
+
+            <article
+              class="card"
+              data-brand="Stella Artois"
+              data-place="Argentina"
+            >
+              <div class="card-image">
+                <img src="assets/tapitas/0007.png" alt="Tapita Stella Artois" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0007</span>
+
+                <h3>Stella Artois</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">Esta es dorada</p>
+              </div>
+            </article>
+
+            <article
+              class="card"
+              data-brand="Stella Artois"
+              data-place="Argentina"
+            >
+              <div class="card-image">
+                <img src="assets/tapitas/0013.png" alt="Tapita Stella Artois" />
+              </div>
+
+              <div class="card-info">
+                <span class="card-id">#0013</span>
+
+                <h3>Stella Artois</h3>
+
+                <p class="card-place">Argentina</p>
+                <p class="card-description">Esta es negra</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section id="contact">
+        <h2>¿Tenés alguna tapita que podría interesarme?</h2>
+
+        <form class="contact-form">
+          <div class="form-field">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Contame qué tenés..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-field">
+            <label for="photo">Foto <span>(opcional)</span></label>
+            <input type="file" id="photo" name="photo" accept="image/*" />
+          </div>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>Built by Nat Valentine with ❤️</footer>
+  </body>
+</html>
